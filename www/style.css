@@ -224,7 +224,7 @@ nav.main-menu li a {
 }
 
 .breadcrumbs span {
-    margin: 0 4px;
+    margin: 0;
 }
 
 .hero img {
@@ -400,7 +400,7 @@ section h2, .cta h2, .add-method h2 {
 
 .consent1 {
     text-align: left;
-    max-width: 200px;
+    max-width: 306px;
     display: flex;
     justify-content: flex-start;
     margin-top: 12px;
