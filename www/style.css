@@ -595,6 +595,7 @@ footer {
 }
 
 .footer-bottom {
+    gap: 173px;
     display: flex;
     flex-direction: row;
     align-items: center;
