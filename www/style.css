@@ -60,6 +60,7 @@ img {
 .top-bar .info {
     display: flex;
     gap: 24px;
+    align-items: center;
 }
 
 .top-bar .info-tel {
