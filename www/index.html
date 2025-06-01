@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>QuartzVinil — Оплата и доставка</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="top-bar">
+      <div class="info">
+        <div class="info-tel">
+          <div style="color: gray">09:00–21:00 (ежедневно)</div>
+          <div>+7 (495) 032 08 12</div>
+        </div>
+        <div class="info-geo">
+          <img src="https://www.svgrepo.com/show/532540/location-pin-alt-1.svg" alt="geolacation"
+            style="max-height: 18px; max-width: 18px" />
+          <p>Москва</p>
+        </div>
+      </div>
+      <div class="search">
+        <input type="search" placeholder="Поиск.." />
+      </div>
+      <div class="actions">
+        <button>Заказать звонок</button>
+        <div class="cart">🛒</div>
+      </div>
+    </div>
+
+    <header>
+      <div class="logo"><img src="img/logo.png" /></div>
+      <nav class="main-menu">
+        <ul>
+          <li>
+            <a href="#">Каталог ▾</a>
+            <ul>
+              <li><a href="#">Подкатегория 1</a></li>
+              <li><a href="#">Подкатегория 2</a></li>
+            </ul>
+          </li>
+          <li><a href="#">О компании</a></li>
+          <li><a href="#">Услуги</a></li>
+          <li><a href="#">Преимущества</a></li>
+          <li><a href="#">Оплата и доставка</a></li>
+          <li><a href="#">Отзывы</a></li>
+          <li><a href="#">Вопросы и ответы</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <nav class="breadcrumbs">
+      <a href="#">Главная</a><span>›</span><span>Оплата и доставка</span>
+    </nav>
+
+    <section class="hero">
+      <img src="image.png" alt="Паркетный пол" />
+    </section>
+
+    <section>
+      <h2>Оплата товара</h2>
+      <div class="cards">
+        <div class="card">
+          <div class="text">
+            <h3>Оплата наличными</h3>
+            <p>При получении товара на складе или курьеру</p>
+          </div>
+          <div class="icon">
+            <img src="img/wal.png" alt="wal" />
+          </div>
+        </div>
+        <div class="card">
+          <div class="text">
+            <h3>Банковской картой</h3>
+            <p>При получении товара на складе или курьеру</p>
+            <div class="logos">
+              <img src="https://img.icons8.com/?size=50&id=1429&format=png" alt="Visa" />
+              <img src="https://img.icons8.com/?size=48&id=62765&format=png" alt="Mastercard" />
+              <img src="https://img.icons8.com/?size=48&id=59239&format=png" alt="Мир" />
+              <img
+                src="https://avatars.mds.yandex.net/i?id=d92ecacffdd3351e6f7af155a6adc33a247ac118241c93d7-5666317-images-thumbs&n=13"
+                alt="СБП" />
+            </div>
+          </div>
+          <div class="icon">
+            <img src="img/card.png" alt="card" />
+          </div>
+        </div>
+        <div class="card">
+          <div class="text">
+            <h3>Безналичный расчёт</h3>
+            <p>Безналичная оплата по выставленному счёту</p>
+          </div>
+          <div class="icon"><img src="img/dol.png" alt="dollar" /></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Доставка товара</h2>
+      <p>
+        Доставка товара осуществляется по тарифным зонам в течение 1–2 рабочих
+        дней
+      </p>
+      <div class="tariffs">
+        <div class="tariff">
+          <h3>Тарифная зона 0 — до 1 800 ₽</h3>
+          <p>Доставка по Москве (кроме Новой Москвы и Зеленограда)</p>
+        </div>
+        <div class="tariff">
+          <h3>Тарифная зона 1 — до 3 500 ₽</h3>
+          <p>Действует в пределах 30 км от МКАД</p>
+        </div>
+        <div class="tariff">
+          <h3>Тарифная зона 2 — до 4 500 ₽</h3>
+          <p>
+            По всей территории Московской области, Новой Москвы и Зеленограда
+          </p>
+        </div>
+        <div class="tariff">
+          <h3>Тарифная зона 3 — до 12 000 ₽</h3>
+          <p>Доставка транспортной компанией в регионы</p>
+        </div>
+      </div>
+      <p class="note">
+        * Отправка товара в регионы, осуществляется в течение 1-2 дней, только
+        после 100% оплаты заказа. Доставка в регионы осуществляется
+        транспортной компанией по выбору заказчика. Стоимость доставки в ваш
+        город определяется индивидуально перевозчиком и оплачивается клиентом
+        при получении товара.
+      </p>
+    </section>
+    <section class="add-method">
+      <h2>Добавить способ оплаты/доставки</h2>
+      <form id="addMethodForm">
+        <div class="form-group">
+          <label for="type">Тип:</label>
+          <select id="type" name="type" required>
+            <option value="payment">Оплата</option>
+            <option value="delivery">Доставка</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="title">Название:</label>
+          <input type="text" id="title" name="title" required>
+        </div>
+        <div class="form-group">
+          <label for="text">Описание:</label>
+          <textarea id="text" name="text" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="icon">URL иконки:</label>
+          <input type="text" id="icon" name="icon">
+        </div>
+        <button type="submit" class="btn">Добавить</button>
+      </form>
+      <p>Для удаления добавленного метода наведите на карточку и нажмите ×</p>
+      <p>Для доставки url можно не указывать.</p>
+    </section>
+    <section class="cta">
+      <h2>Остались вопросы или нужна помощь с выбором?</h2>
+      <p>
+        Оставьте, пожалуйста, свои контакты, и мы перезвоним в ближайшее время
+      </p>
+      <form>
+        <input type="text" placeholder="Имя" required />
+        <div class="consent">
+          <input type="tel" placeholder="+7 (___) ___-__-__" required />
+          <div class="consent1">
+            <input type="checkbox" id="consent" required />
+            <label for="consent">даю согласие на обработку персональных данных</label>
+          </div>
+        </div>
+
+        <button type="submit">Перезвоните мне</button>
+      </form>
+    </section>
+
+    <footer>
+      <div class="container footer">
+        <div class="col">
+          <div class="logo"><img src="img/logo.png" /></div>
+          <img src="img/yandex.png" alt="yandex" />
+        </div>
+        <div class="col">
+          <ul>
+            <li><a href="#">Каталог</a></li>
+            <li><a href="#">О компании</a></li>
+            <li><a href="#">Услуги</a></li>
+            <li><a href="#">Преимущества</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <ul>
+            <li><a href="#">Каталог</a></li>
+            <li><a href="#">О компании</a></li>
+            <li><a href="#">Услуги</a></li>
+            <li><a href="#">Преимущества</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <ul>
+            <li><a href="#">Оплата и доставка</a></li>
+            <li><a href="#">Отзывы</a></li>
+            <li><a href="#">Вопросы и ответы</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h3>+7 (495) 032 08 12</h3>
+          <h3>hello@royce-spc.ru</h3>
+          <div class="socials">
+            <div class="socials-cycle"><a href="#"><img src="https://www.svgrepo.com/show/501054/vk.svg" alt="VK" /></a>
+            </div>
+            <div class="socials-cycle"><a href="#"><img src="https://www.svgrepo.com/show/512399/instagram-167.svg"
+                  alt="Instagram" /></a></div>
+            <div class="socials-cycle"><a href="#"><img src="https://www.svgrepo.com/show/512120/facebook-176.svg"
+                  alt="Facebook" /></a></div>
+          </div>
+        </div>
+        <div class="col" style="width: 207px">
+          <a href="#">Политика конфиденциальности</a>
+        </div>
+        <div class="col payments">
+          <h4>Способы оплаты</h4>
+          <div class="colpl">
+            <img src="https://img.icons8.com/?size=50&id=1429&format=png" alt="Visa" />
+            <img src="https://img.icons8.com/?size=48&id=62765&format=png" alt="Mastercard" />
+            <img src="https://img.icons8.com/?size=48&id=59239&format=png" alt="Мир" />
+            <img
+              src="https://avatars.mds.yandex.net/i?id=d92ecacffdd3351e6f7af155a6adc33a247ac118241c93d7-5666317-images-thumbs&n=13"
+              alt="СБП" />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="./js.js"></script>
+</body>
+
+</html>
