@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Генерация уникального ID с гарантией уникальности
     const method = {
-      id: crypto.randomUUID(), // Используем современный API для генерации UUID
+      id: uuidv4(), // Используем кроссбраузерную функцию для генерации UUID
       type: typeSelect.value,
       title: document.getElementById('title').value,
       text: document.getElementById('text').value,
@@ -119,11 +119,19 @@ function migrateOldData() {
     if (methods.length && typeof methods[0].id !== 'string') {
       const migrated = methods.map(m => ({
         ...m,
-        id: m.id ? String(m.id) : crypto.randomUUID()
+        id: m.id ? String(m.id) : uuidv4()
       }));
       
       localStorage.setItem(key, JSON.stringify(migrated));
       console.log(`Migrated ${key}:`, migrated);
     }
+  });
+}
+
+// Кроссбраузерная генерация UUID
+function uuidv4() {
+  return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+    var r = Math.random() * 16 | 0, v = c === 'x' ? r : (r & 0x3 | 0x8);
+    return v.toString(16);
   });
 }
